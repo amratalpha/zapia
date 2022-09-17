@@ -22745,7 +22745,8 @@ code {
 .banner-image {
     height: 60vh;
     background-size: cover;
-    background-image: url(/assets/images/header_img@2x.png);
+    /* background-image: url(/assets/images/header_img@2x.png); */
+    background-image: url(../../assets/images/header_img@2x.png);
     background-position: center left;
     background-repeat: no-repeat;
 }
