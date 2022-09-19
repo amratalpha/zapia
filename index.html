@@ -54,11 +54,6 @@
 					</li>
 					<li class="nav-item dropdown d-none d-lg-flex mx-2">
 						<div class="nav-link nav-icons">
-							<span class="ico icon-profile_icon"></span>
-						</div>
-					</li>
-					<li class="nav-item dropdown d-none d-lg-flex mx-2">
-						<div class="nav-link nav-icons">
 							<span class="ico icon-members_icon"></span>
 						</div>
 					</li>
@@ -262,8 +257,25 @@
 					<li class="nav-item">
 						<a class="nav-link" href=""><i class="fa fa-home menu-icon"></i><span class="menu-title">Archives</span> </a>
 					</li>
+					<li class="nav-item">
+						<a class="nav-link collapsed" data-toggle="collapse" href="#useful-link" aria-expanded="false" aria-controls="maps">
+							<i class="fa fa-link menu-icon"></i>
+						  <span class="menu-title">Useful Links</span>
+						  <i class="menu-arrow"></i>
+						</a>
+						<div class="collapse" id="useful-link">
+						  <ul class="nav flex-column sub-menu">
+							<li class="nav-item"> <a class="nav-link" href="#">Security Permission</a></li>
+							<li class="nav-item"> <a class="nav-link" href="#">Facilities Management</a></li>
+							<li class="nav-item"> <a class="nav-link" href="#">Fleet Management</a></li>
+							<li class="nav-item"> <a class="nav-link" href="#">Adobe Sign</a></li>
+							<li class="nav-item"> <a class="nav-link" href="#">SMS</a></li>
+						  </ul>
+						</div>
+					  </li>
 					
 				</ul>
+				
 			</nav>
 			<!-- partial -->
 			<div class="main-panel">
@@ -321,9 +333,14 @@
                     <div class="row">
                         <div class="col-md-4 grid-margin stretch-card">
 							<div class="card card-brown">
-								<div class="card-body d-flex flex-column">
-									<h4 class="card-title"> Executive Message
-                                    </h4>
+								<div class="card-header">
+                                    <div class="d-flex align-items-baseline justify-content-between">
+                                        <h4 class="card-title mb-0"> Executive Message
+                                        </h4>
+                                    </div>
+                                    <hr style="border-color: #ffffff61!important;">
+                                </div>
+								<div class="card-body d-flex flex-column pt-1">
 									<p class="card-description">We take it upon ourselves to cherish the legacy graciously passed on to us 
                                         by our founding father, the late Sheikh Zayed bin Sultan Al Nahyan, by constantly chieve the balance 
                                         between growth, seeking to achieve the development, advancement, and preserving our environment, as 
@@ -341,11 +358,21 @@
 						</div>
                         <div class="col-md-8 grid-margin stretch-card">
 							<div class="card">
-								<div class="card-body">
+								<div class="card-header">
                                     <div class="d-flex align-items-baseline justify-content-between">
                                         <h4 class="card-title mb-0"> Latest News
                                         </h4>
-                                        <a href="" class="card-link">View All</a>
+										<a href="" class="card-link">View All</a>
+                                    </div>
+                                    <hr>
+                                </div>
+								<div class="card-body custom-lg-scroller pt-0">
+                                    <div class="img-text-horizontal d-flex flex-column flex-sm-row">
+                                        <img class="img-fluid" src="assets/images/img-1.jpg" width="150" alt="">
+                                        <div>
+                                            <h5 class="card-subtitle my2-0 fw-600">Lorem</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, voluptatum excepturi minus dicta laboriosam reprehenderit perferendis accusamus eum suscipit adipisci totam aut dolorem fuga natus, provident sed. Eius, dolorum repellendus!</p>
+                                        </div>
                                     </div>
                                     <hr>
                                     <div class="img-text-horizontal d-flex flex-column flex-sm-row">
@@ -378,13 +405,15 @@
                     <div class="row">
                         <div class="col-md-4 grid-margin stretch-card">
 							<div class="card">
-								<div class="card-body">
+								<div class="card-header">
                                     <div class="d-flex align-items-baseline justify-content-between">
                                         <h4 class="card-title mb-0"> Upcoming Events
                                         </h4>
-                                        <a href="" class="card-link">View All</a>
+										<a href="" class="card-link">View All</a>
                                     </div>
                                     <hr>
+                                </div>
+								<div class="card-body custom-sm-scroller pt-0 ">
                                     <div class="row">
                                         <div class="col-md-3">
                                             <div class="py-2 mt-2 bg-brown rounded-10">
@@ -393,10 +422,10 @@
                                         </div>
                                         <div class="col-md-9">
                                             <h5 class="card-subtitle my2-0 fw-600">Lorem</h5>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                            <p class="mb-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                                         </div>
                                     </div>
-                                    <hr>
+                                    <hr class="my-2">
                                     <div class="row">
                                         <div class="col-md-3">
                                             <div class="py-2 mt-2 bg-brown rounded-10">
@@ -405,10 +434,10 @@
                                         </div>
                                         <div class="col-md-9">
                                             <h5 class="card-subtitle my2-0 fw-600">Lorem</h5>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                            <p class="mb-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                                         </div>
                                     </div>
-                                    <hr>
+                                    <hr class="my-2">
                                     <div class="row">
                                         <div class="col-md-3">
                                             <div class="py-2 mt-2 bg-brown rounded-10">
@@ -417,7 +446,19 @@
                                         </div>
                                         <div class="col-md-9">
                                             <h5 class="card-subtitle my2-0 fw-600">Lorem</h5>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                            <p class="mb-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                        </div>
+                                    </div>
+                                    <hr class="my-2">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="py-2 mt-2 bg-brown rounded-10">
+                                                <h5 class="date-calender text-center fw-400 text-white">SEP <br> 03</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <h5 class="card-subtitle my2-0 fw-600">Lorem</h5>
+                                            <p class="mb-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                                         </div>
                                     </div>
                                    
@@ -461,18 +502,18 @@
                                 </div>
 							</div>
 						</div>
-                        <div class="col-md-4 grid-margin stretch-card">
+                        <div class="col-md-4 grid-margin" style="display: grid;">
                             <div class="row">
-                                <div class="col-12">
-                                    <div class="card bg-warm" style="height: 95%;">
+                                <div class="col-12 grid-margin">
+                                    <div class="card bg-warm" style="height: 100%;">
                                         <div class="card-body new-joiners justify-content-center">
 											<span class="icon-fikrati_icon text-white" style="font-size: 60px;"></span>
                                             <h4 class="mt-5 mb-2 text-white f-18" style="letter-spacing: 1.2px;">Fikrati</h4>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12">
-                                    <div class="card bg-warm" style="height: 95%;">
+                                <div class="col-12 ">
+                                    <div class="card bg-warm" style="height: 100%;">
                                         <div class="card-body new-joiners justify-content-center">
 											<span class="icon-employee_handbook_icon text-white" style="font-size: 50px;"></span>
                                             <h4 class="mt-5 mb-2 text-white f-18" style="letter-spacing: 1.2px;">Employee Handbook</h4>
@@ -488,12 +529,12 @@
 							<div class="card">
 								<div class="card-header">
                                     <div class="d-flex align-items-baseline justify-content-between">
-                                        <h4 class="card-title mb-0"> Documents
+                                        <h4 class="card-title mb-0"> Useful Links
                                         </h4>
                                     </div>
                                     <hr>
                                 </div>
-								<div class="card-body pt-0">
+								<div class="card-body custom-sm-scroller pt-0">
 									<div class="wrapper d-flex align-items-center py-2">
 										<img class="img-sm" src="assets/images/W-documents@2x.png" alt="profile">
 										<div class="wrapper ml-3">
@@ -533,27 +574,54 @@
 										  <span class="icon-documents_download_icon f-20"></span>
 										</a>
 									</div>
+									<hr class="my-2">
+									<div class="wrapper d-flex align-items-center py-2">
+										<img class="img-sm" src="assets/images/A-documents@2x.png" alt="profile">
+										<div class="wrapper ml-3">
+											<h6 class="mb-1">Stella Davidson</h6>
+										</div>
+										<a class="ml-auto px-1 py-1 text-brown">
+										  <span class="icon-documents_download_icon f-20"></span>
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
-						
-                        <div class="col-md-4 grid-margin stretch-card">
+						<div class="col-md-4 grid-margin stretch-card">
 							<div class="card">
-                                <div class="card-header">
-                                    <div class="d-flex align-items-baseline justify-content-between">
-                                        <h4 class="card-title mb-0"> Employee of the Month
-                                        </h4>
+                               
+                                <div class="owl-carousel owl-theme full-width">
+                                    <div class="item">
+										<div class="card-header">
+											<div class="d-flex align-items-baseline justify-content-between">
+												<h4 class="card-title mb-0"> Employee of the Month
+												</h4>
+											</div>
+											<hr>
+										</div>
+                                        <div class="card-body new-joiners">
+                                            <img class="img-fluid" src="assets/images/avatar7.png" alt="">
+                                            <h4 class="mt-4 mb-2 text-warm">Talha Shaikh</h4>
+                                            <span class="text-warm">Sr. Project Manger</span>
+                                        </div>
                                     </div>
-                                    <hr>
-                                </div>
-                                <div class="card-body new-joiners">
-                                    <img class="img-fluid" src="assets/images/avatar7.png" alt="">
-                                    <h4 class="mt-4 mb-3 text-warm">Talha Shaikh</h4>
-                                    <span class="text-warm">Creative Designer</span>
+                                    <div class="item">
+										<div class="card-header">
+											<div class="d-flex align-items-baseline justify-content-between">
+												<h4 class="card-title mb-0"> Employee of the Year
+												</h4>
+											</div>
+											<hr>
+										</div>
+                                        <div class="card-body new-joiners">
+                                            <img class="img-fluid" src="assets/images/avatar7.png" alt="">
+                                            <h4 class="mt-4 mb-2 text-warm">Talha Shaikh</h4>
+                                            <span class="text-warm">Sr. Project Manger</span>
+                                        </div>
+                                    </div>
                                 </div>
 							</div>
 						</div>
-						
                         <div class="col-md-4 grid-margin stretch-card">
 							<div class="card">
                                 <div class="card-header">
@@ -571,6 +639,64 @@
 							</div>
 						</div>
 					</div>
+					<div class="row grid-margin">
+						<div class="col-lg-12">
+						  <div class="card">
+							<div class="card-body">
+							  <div class="owl-carousel owl-theme nonloop">
+								<div class="item" style="height: 180px;">
+								  <div class="card rounded-10" style="height:100%; background-color: #a1b6d3;">
+									<div class="card-body text-center mt-2">
+										<i class="fa fa-lock text-white"style="font-size: 50px;"></i>
+                                        <h4 class="mt-4 text-white f-18" style="letter-spacing: 1.2px;">Security Permission</h4>
+									</div>
+								  </div>
+								</div>
+								<div class="item" style="height: 180px;">
+								  <div class="card rounded-10" style="height:100%; background-color: #d8ae95;">
+									<div class="card-body text-center mt-2">
+										<i class="fa fa-phone text-white"style="font-size: 50px;"></i>
+                                        <h4 class="mt-4 text-white f-18" style="letter-spacing: 1.2px;">Facilities Management</h4>
+									</div>
+								  </div>
+								</div>
+								<div class="item" style="height: 180px;">
+								  <div class="card rounded-10" style="height:100%; background-color: #80d59a;">
+									<div class="card-body text-center mt-2">
+										<i class="fa fa-cog text-white"style="font-size: 50px;"></i>
+                                        <h4 class="mt-4 text-white f-18" style="letter-spacing: 1.2px;">Fleet Management</h4>
+									</div>
+								  </div>
+								</div>
+								<div class="item" style="height: 180px;">
+								  <div class="card rounded-10" style="height:100%; background-color: #f17677;">
+									<div class="card-body text-center mt-2">
+										<span class="icon-fikrati_icon text-white" style="font-size: 60px;"></span>
+                                        <h4 class="mt-4 text-white f-18" style="letter-spacing: 1.2px;">Adobe Sign</h4>
+									</div>
+								  </div>
+								</div>
+								<div class="item" style="height: 180px;">
+								  <div class="card rounded-10" style="height:100%; background-color: #d7c98a;">
+									<div class="card-body text-center mt-2">
+										<i class="fa fa-comment text-white"style="font-size: 50px;"></i>
+                                        <h4 class="mt-4 text-white f-18" style="letter-spacing: 1.2px;">SMS</h4>
+									</div>
+								  </div>
+								</div>
+								<div class="item" style="height: 180px;">
+								  <div class="card rounded-10" style="height:100%; background-color: #d7c98a;">
+									<div class="card-body text-center mt-2">
+										<i class="fa fa-comment text-white"style="font-size: 50px;"></i>
+                                        <h4 class="mt-4 text-white f-18" style="letter-spacing: 1.2px;">SMS</h4>
+									</div>
+								  </div>
+								</div>
+							  </div>
+							</div>
+						  </div>
+						</div>
+					  </div>
 				</div>
 				<!-- content-wrapper ends -->
 				<!-- partial -->

@@ -58,13 +58,20 @@
     if ($('.nonloop').length) {
       $('.nonloop').owlCarousel({
         items: 5,
-        loop: false,
+        loop: true,
         margin: 10,
-        autoplay: true,
-        autoplayTimeout: 6000,
+        autoplay: false,
+        nav: true,
+        navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
         responsive: {
+          0: {
+            items: 1
+          },
           600: {
-            items: 4
+            items: 3
+          },
+          1000: {
+            items: 5
           }
         }
       });
@@ -83,13 +90,15 @@
   
     if ($('.lazy-load').length) {
       $('.lazy-load').owlCarousel({
-        items: 4,
+        items: 5,
         lazyLoad: true,
         loop: true,
         margin: 10,
         auto: true,
         autoplay: true,
         autoplayTimeout: 2500,
+        nav: true,
+        navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
       });
     }
   
@@ -113,7 +122,7 @@
         }
       });
     }
-  
+    
     if ($('.video-carousel').length) {
       $('.video-carousel').owlCarousel({
         loop: false,

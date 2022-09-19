@@ -1,4 +1,47 @@
+/* ===== Scrollbar CSS START===== */
+  /* Firefox */
+  .custom-sm-scroller {
+    overflow-y: auto;
+    min-height: auto;
+    max-height: 370px;
+    scrollbar-width: thin;
+    scrollbar-color: #7b6e66 #ffffff;
+  }
+  .custom-lg-scroller {
+    overflow-y: auto;
+    min-height: auto;
+    max-height: 520px;
+    scrollbar-width: thin;
+    scrollbar-color: #7b6e66 #ffffff;
+  }
 
+  /* Chrome, Edge, and Safari */
+  .custom-sm-scroller::-webkit-scrollbar {
+    width: 5px;
+  }
+  .custom-lg-scroller::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .custom-sm-scroller::-webkit-scrollbar-track {
+    background: #ffffff00;
+  }
+
+  .custom-lg-scroller::-webkit-scrollbar-track {
+    background: #ffffff00;
+  }
+
+  .custom-sm-scroller::-webkit-scrollbar-thumb {
+    background-color: #7b6e66ad;
+    border-radius: 10px;
+  }
+
+  .custom-lg-scroller::-webkit-scrollbar-thumb {
+    background-color: #7b6e66ad;
+    border-radius: 10px;
+  }
+  
+  /* ===== Scrollbar CSS END===== */
 
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
@@ -8753,7 +8796,7 @@ a {
 }
 
 a:hover {
-    color: #7b6e66;
+    color: #7b6e66!important;
     text-decoration: underline;
 }
 
@@ -20582,7 +20625,7 @@ input:focus {
 .sidebar .nav.sub-menu {
     margin-top: 0;
     list-style: none;
-    padding: 0 0 0 4.25rem;
+    padding: 0 0 0 3.25rem;
 }
 
 .sidebar .nav.sub-menu .nav-item {
@@ -20590,7 +20633,7 @@ input:focus {
 }
 
 .sidebar .nav.sub-menu .nav-item .nav-link {
-    color: #999999;
+    color: #7b6e66;
     padding: 0.75rem 1rem;
     position: relative;
     font-size: 0.8125rem;
@@ -20598,16 +20641,19 @@ input:focus {
     height: auto;
     border-top: 0;
 }
+.sidebar .nav.sub-menu .nav-item .nav-link:hover {
+    text-decoration: underline;
+}
 
 .sidebar .nav.sub-menu .nav-item .nav-link:before {
     content: "";
     position: absolute;
-    width: 7px;
-    height: 7px;
+    width: 5px;
+    height: 5px;
     border-radius: 100%;
     margin-left: -1.25rem;
     top: 15px;
-    background: #ffffff;
+    background: #7b6e66;
 }
 
 .rtl .sidebar .nav.sub-menu .nav-item .nav-link:before {
@@ -22152,14 +22198,13 @@ code {
     .sidebar-icon-only .sidebar .nav .nav-item .collapse {
         display: none;
     }
+    /* /////////////////////////////////////////////////////////////////////////////// */
     .sidebar-icon-only .sidebar .nav .nav-item.hover-open .nav-link .menu-title {
         display: -webkit-flex;
         display: flex;
         -webkit-align-items: center;
         align-items: center;
-        background-color: #d79c61;
         animation: fadeIn 1s;
-        color: #ffffff;
         padding: 0.5rem 1.4rem;
         left: 0px;
         position: absolute;
@@ -22170,6 +22215,11 @@ code {
         z-index: 1;
         line-height: 1.8;
         box-shadow: 4px 0px 7px 0px rgba(182, 185, 189, 0.25);
+        background-color: #d79c61;
+        color: #ffffff;
+        border: 8px solid #7b6e66;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
     .sidebar-dark.sidebar-icon-only .sidebar .nav .nav-item.hover-open .nav-link .menu-title {
         background: linear-gradient(85deg, #7b6e66, #6a005b);
@@ -22190,6 +22240,9 @@ code {
     .sidebar-icon-only .sidebar .nav .nav-item.hover-open .nav-link:hover .menu-title {
         background: #d79c61;
         color: #ffffff;
+        border: 8px solid #7b6e66;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
     .sidebar-dark.sidebar-icon-only .sidebar .nav .nav-item.hover-open .nav-link:hover .menu-title {
         background: linear-gradient(85deg, #7b6e66, #6a005b);
@@ -22198,13 +22251,18 @@ code {
     .sidebar-icon-only .sidebar .nav .nav-item.hover-open .collapsing {
         display: block;
         padding: .5rem 0;
-        background: linear-gradient(85deg, #7b6e66, #6a005b);
         color: #ffffff;
-        border-radius: 0 0 5px 0;
         position: absolute;
         left: 70px;
-        width: 190px;
+        width: 230px;
         box-shadow: 4px 4px 7px 0px rgba(182, 185, 189, 0.25);
+        background: #d79c61;
+        color: #ffffff;
+        border: 2px solid #7b6e66;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        top: 48px;
+    }
     }
     .sidebar-dark.sidebar-icon-only .sidebar .nav .nav-item.hover-open .collapse,
     .sidebar-dark.sidebar-icon-only .sidebar .nav .nav-item.hover-open .collapsing {
@@ -31505,7 +31563,7 @@ body.avgrund-active {
 
 .owl-carousel.full-width .owl-nav {
     position: absolute;
-    top: 30%;
+    top: 50%;
     width: 100%;
     margin-top: 0;
 }
@@ -31538,8 +31596,79 @@ body.avgrund-active {
 .owl-carousel.full-width .owl-nav .owl-next {
     float: right;
 }
+.owl-dots{
+    display:none;
+}
+.owl-carousel.full-width .owl-dots {
+    margin-top: 1rem;
+}
 
 .owl-carousel.full-width .owl-dots {
+    margin-top: 1rem;
+}
+
+.owl-carousel .item-video {
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+
+.owl-carousel.nonloop .nonloop {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin-top: 0;
+}
+.owl-carousel.nonloop .owl-nav {
+    position: absolute;
+    bottom: 0;
+    top: 40%;
+    width: 100%;
+}
+
+.owl-carousel.nonloop .owl-nav .owl-prev,
+.owl-carousel.nonloop .owl-nav .owl-next {
+    background: transparent;
+    color: #ffffff;
+}
+
+.owl-carousel.nonloop .owl-nav .owl-prev i,
+.owl-carousel.nonloop .owl-nav .owl-next i {
+    width: 20px;
+    height: 20px;
+    color:  #7b6e66a1;
+
+}
+
+.owl-carousel.nonloop .owl-nav .owl-prev i:before,
+.owl-carousel.nonloop .owl-nav .owl-next i:before {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 2;
+}
+
+.owl-carousel.nonloop .owl-nav .owl-prev {
+    float: left;
+    position: absolute;
+    left: -35px;
+}
+
+.owl-carousel.nonloop .owl-nav .owl-next {
+    float: right;
+    position: absolute;
+    right: -35px;
+}
+.owl-dots{
+    display:none;
+}
+.owl-carousel.nonloop .owl-dots {
+    margin-top: 1rem;
+}
+
+.owl-carousel.nonloop .owl-dots {
     margin-top: 1rem;
 }
 
