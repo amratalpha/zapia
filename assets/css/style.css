@@ -20498,6 +20498,10 @@ input:focus {
 .sidebar .nav .nav-item .nav-link i.menu-arrow {
     margin-left: auto;
     line-height: 1;
+    transition: 0.3s ease-in-out;
+}
+a.nav-link[aria-expanded="true"] i.menu-arrow {
+    transform: rotate(90deg);
 }
 
 .sidebar .nav .nav-item .nav-link i.menu-arrow:before {
@@ -20513,6 +20517,12 @@ input:focus {
 .rtl .sidebar .nav .nav-item .nav-link i.menu-arrow {
     margin-right: auto;
     margin-left: 0;
+}
+[dir="rtl"] .nav .nav-item .nav-link i.menu-arrow, .rtl .sidebar .nav .nav-item .nav-link i.menu-arrow {
+    margin-right: auto;
+    line-height: 1;
+    transition: 0.3s ease-in-out;
+    transform: rotate(180deg);
 }
 
 .sidebar .nav .nav-item .nav-link .menu-title {
@@ -22286,7 +22296,16 @@ code {
     .sidebar-icon-only .main-panel {
         width: calc(100% - 70px);
     }
-}
+    .sidebar-icon-only #sidebar {
+       position:relative;
+       margin-top: 0px!important;
+    }
+    #sidebar {
+       position:relative;
+       margin-top: -70px!important;
+       z-index: 9999;
+    }
+
 
 @media (min-width: 992px) {
     .sidebar-hidden .sidebar {
