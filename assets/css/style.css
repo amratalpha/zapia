@@ -22474,18 +22474,18 @@ code {
 }
 
 .img-lg {
-    width: 92px;
-    height: 92px;
+    width: 92px!important;
+    height: 92px!important;
 }
 
 .img-sm {
-    width: 55px;
-    height: 55px;
+    width: 55px!important;
+    height: 55px!important;
 }
 
 .img-xs {
-    width: 37px;
-    height: 37px;
+    width: 37px!important;
+    height: 37px!important;
 }
 
 .img-ss,
@@ -31600,7 +31600,19 @@ body.avgrund-active {
     color:  #7b6e66a1;
 
 }
+.card-brown .owl-carousel.full-width .owl-nav .owl-prev i, 
+.card-brown .owl-carousel.full-width .owl-nav .owl-next i {
+    width: 20px;
+    height: 20px;
+    color: #ffffff;
+}
 
+
+.card-brown .owl-carousel.full-width .owl-nav .owl-prev, 
+.card-brown .owl-carousel.full-width .owl-nav .owl-next {
+    margin: 0px 2px;
+    padding: 0px;
+}
 .owl-carousel.full-width .owl-nav .owl-prev i:before,
 .owl-carousel.full-width .owl-nav .owl-next i:before {
     font-size: 14px;
