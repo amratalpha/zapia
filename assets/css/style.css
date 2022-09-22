@@ -25340,9 +25340,14 @@ code {
     font-weight: normal;
     margin-bottom: 1.25rem;
     text-transform: capitalize;
-    font-size: 1.825rem;
+    font-size: 1.525rem;
 }
-
+@media only screen and (max-width:370px){
+    .card-brown .card-title{
+       font-size: 1.125rem;
+       margin-top: 6px;
+   }
+}
 .card.card-brown .card-bottom h6{
     letter-spacing: 0.5px;
     color:#fff;
@@ -31585,6 +31590,12 @@ body.avgrund-active {
     top: 50%;
     width: 100%;
     margin-top: 0;
+}
+.card-brown .owl-carousel.full-width .owl-nav {
+    position: absolute;
+    top: 24px;
+    right: 14px;
+    width: auto;
 }
 
 .owl-carousel.full-width .owl-nav .owl-prev,
