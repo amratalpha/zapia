@@ -25323,12 +25323,12 @@ code {
     text-transform: capitalize;
     font-size: 1.525rem;
 }
-.card-body.new-joiners{
+.card-body.slider-card {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.card-body.new-joiners img{
+.card-body.slider-card img{
     max-width: 180px;
     height: 180px;
     border-radius: 50%;
@@ -26153,7 +26153,8 @@ select.border-dark.tt-hint {
     border-radius: 50%;
     cursor: pointer!important;
 }
-.nav-link.nav-icons span.ico{
+.nav-link.nav-icons i,
+.nav-link.nav-icons span{
     color: #fff;
 }
 
@@ -31585,6 +31586,14 @@ body.avgrund-active {
     border-radius: 4px;
 }
 
+.new-joiners .owl-carousel.full-width .owl-nav {
+    top: 32%;
+}
+
+.manager-on-duty .owl-carousel.full-width .owl-nav {
+    top: 32%;
+}
+
 .owl-carousel.full-width .owl-nav {
     position: absolute;
     top: 50%;
@@ -31638,6 +31647,7 @@ body.avgrund-active {
 .owl-carousel.full-width .owl-nav .owl-next {
     float: right;
 }
+
 .owl-dots{
     display:none;
 }
