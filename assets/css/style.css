@@ -20772,14 +20772,16 @@ a.nav-link[aria-expanded="true"] i.menu-arrow {
 @media screen and (max-width: 991px) {
     .sidebar-offcanvas {
         position: fixed;
-        max-height: calc(100vh - 70px);
-        top: 70px;
+        /* max-height: calc(100vh - 70px); */
+        /* top: 70px; */
+        top: 0px;
         bottom: 0;
         overflow: auto;
         right: -255px;
         -webkit-transition: all 0.25s ease-out;
         -o-transition: all 0.25s ease-out;
         transition: all 0.25s ease-out;
+        margin-top: 40px;
     }
     .sidebar-offcanvas.active {
         right: 0;
@@ -22323,7 +22325,7 @@ code {
 @media (min-width: 992px) {
     #sidebar {
         position:relative;
-        margin-top: -70px!important;
+        margin-top: -70px;
         z-index: 9999;
      }
     .sidebar-hidden .sidebar {
