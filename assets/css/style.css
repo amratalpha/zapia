@@ -18060,6 +18060,7 @@ button.bg-dark:focus,
 }
 
 @media (min-width: 1200px) {
+    
     .flex-xl-row {
         flex-direction: row !important;
     }
@@ -21963,6 +21964,7 @@ html {
 
 .container-scroller {
     overflow: hidden;
+    max-width: 1440px;
 }
 
 pre {
@@ -33243,6 +33245,20 @@ div.tagsinput span.tag a {
 }
 
 @media (max-width: 767px) {
+    .profile-page .profile-header .details {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 15px;
+    }
+}
+@media only screen and (min-width: 1440px){
+    .container-scroller {
+        clear: both;
+        margin: auto auto 0;
+    } 
+}
+
+@media (min-width: 1600) {
     .profile-page .profile-header .details {
         padding-left: 15px;
         padding-right: 15px;
