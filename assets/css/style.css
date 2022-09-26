@@ -20786,6 +20786,11 @@ a.nav-link[aria-expanded="true"] i.menu-arrow {
     .sidebar-offcanvas.active {
         right: 0;
         width: 90%;
+        padding-top: 40px;
+    }
+    .sidebar-offcanvas.active ~ .main-panel {
+        filter: brightness(0.5);
+
     }
 }
 
