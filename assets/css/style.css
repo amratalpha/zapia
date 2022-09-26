@@ -20781,6 +20781,7 @@ a.nav-link[aria-expanded="true"] i.menu-arrow {
         -webkit-transition: all 0.25s ease-out;
         -o-transition: all 0.25s ease-out;
         transition: all 0.25s ease-out;
+        width: 90%;
     }
     .sidebar-offcanvas.active {
         right: 0;
