@@ -8653,7 +8653,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
-}
+} 
 
 html {
     font-family: sans-serif;
@@ -31591,7 +31591,7 @@ body.avgrund-active {
 }
 
 .manager-on-duty .owl-carousel.full-width .owl-nav {
-    top: 32%;
+    top: 36%;
 }
 
 .owl-carousel.full-width .owl-nav {
