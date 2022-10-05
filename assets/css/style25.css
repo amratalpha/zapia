@@ -19927,7 +19927,7 @@ a.text-light:focus {
     color: #7b6e66 !important;
 }
 .text-warm{
-    color:#505050!important
+    color:#7b6e66!important;
 }
 .text-brown{
     color: #d79c61!important;
@@ -25362,7 +25362,7 @@ code {
     line-height: 21px;
 }
 .card .card-title {
-    color: #353332;
+    color: #7b6e66;
     font-weight: normal;
     margin-bottom: 1.25rem;
     text-transform: capitalize;
