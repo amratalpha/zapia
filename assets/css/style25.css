@@ -10445,6 +10445,7 @@ pre code {
     .banner-image .card-body .col h3 {
         font-size: 16px;
     }
+    
 }
 
 @media (max-width: 767.98px) {
@@ -33403,5 +33404,67 @@ div.tagsinput span.tag a {
     font-size: 43px;
     margin-right: 0;
 }
+.fw-bold {
+    font-weight: 700!important;
+}
+.text-end{
+    text-align: end;
+}
+.blog-text{
+    font-size: 18px;
+    line-height: 22px;
+}
+.comments {
+    background-color: #a36d38;
+    color: #fff !important;
+    padding: 5px 10px;
+    color: white;
+    font-size: 20px !important;
+}
+.user-img {
+    width: 50px;
+    height: 50px;
+}
+.comment-text {
+    font-size: 18px !important;
+}
+.news-card2 .date {
+    color: #a36d38;
+    overflow: hidden;
+    padding-bottom: 10px;
+    line-height: 24px;
+    text-align: center;
+    border: 2px solid #a36d38;
+    display: inline-block;
 
+    text-transform: uppercase;
+    border-radius: 0.25rem;
+}
+.news-card2 .date span {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #a36d38;
+    border-radius: 0.25rem;
+}
+.news-details {
+    padding-top: 5px;
+}
+.news-headlines a {
+    color: #7b6e66;
+}
+p.news-text {
+    font-size: 18px !important;
+}
+.card.news-card2 {
+    margin-bottom: 15px;
+}
+.news-read-more {
+    text-transform: uppercase;
+    color: #7b6e66;
+}
 /*# sourceMappingURL=maps/style.css.map */
