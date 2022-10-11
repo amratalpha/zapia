@@ -33522,3 +33522,6 @@ color: #4f713f;}
     min-height: auto;
     max-height: 250px;
 }
+.bg-brown .date-calender1 {
+    line-height: 25px;
+}
