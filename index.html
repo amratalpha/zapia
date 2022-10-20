@@ -718,7 +718,7 @@
 							  <div class="owl-carousel owl-theme nonloop">
 								
 								<div class="item" style="height: 180px;">
-									<div class="dropdown-menu dropdown-menu-sm" id="context-menu">
+									<div class="dropdown-menu dropdown-menu-sm context-menu" id="">
 										<a class="dropdown-item" href="#">Action</a>
 										<a class="dropdown-item" href="#">Another action</a>
 										<a class="dropdown-item" href="#">Something else here</a>
@@ -770,8 +770,9 @@
 										<i class="fa fa-comment text-white"style="font-size: 50px;"></i>
                                         <h4 class="mt-4 text-white f-18" style="letter-spacing: 1.2px;">SMS</h4>
 									</div>
-								  </div>
+								  </div> 
 								</div>
+								
 							  </div>
 							</div>
 						  </div>
@@ -858,17 +859,17 @@
 	$('.jumbotron').on('contextmenu', function(e) {
 		var top = e.pageY - 10;
 		var left = e.pageX - 90;
-		$("#context-menu").css({
+		$(".context-menu").css({
 		  display: "block",
 		   top: "50px",
 		  left: "14px"
 		}).addClass("show");
 		return false; //blocks default Webbrowser right click menu
 	  }).on("click", function() {
-		$("#context-menu").removeClass("show").hide();
+		$(".context-menu").removeClass("show").hide();
 	  });
 	  
-	  $("#context-menu a").on("click", function() {
+	  $(".context-menu a").on("click", function() {
 		$(this).parent().removeClass("show").hide();
 	  });</script>
 	  <script>
